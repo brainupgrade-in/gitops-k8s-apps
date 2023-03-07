@@ -1,0 +1,7 @@
+apiVersion: v2
+name: prom-deployment
+version: 0.0.1
+dependencies:
+- name: kube-prometheus-stack
+  version: 18.0.8 
+  repository: https://prometheus-community.github.io/helm-charts

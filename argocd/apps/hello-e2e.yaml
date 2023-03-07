@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-e2e
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/brainupgrade-in/gitops-k8s-apps.git 
+    targetRevision: HEAD
+    path: hello/e2e
+    kustomize:
+      version: v4.5.3
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: e2e
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: false
