@@ -1,12 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-bases:
-- ../base
 
 patchesStrategicMerge:
 - ./deployment-patch.yaml
 
 images:
 - name: brainupgrade/hello
-  newTag: commitid
+  newTag: 836dae682bda51d1c11578b01f3c25cbe51c7499
+resources:
+- ../base
