@@ -6,13 +6,10 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/brainupgrade-in/gitops-k8s-apps.git 
+    repoURL: https://prometheus-community.github.io/helm-charts 
     targetRevision: HEAD
     path: prometheus-grafana
-    chart: kube-prometheus-chart
-    helm:
-      valueFiles:
-        - values.yaml
+    chart: kube-prometheus-stack
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
