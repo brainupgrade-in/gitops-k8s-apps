@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://prometheus-community.github.io/helm-charts 
-    targetRevision: HEAD
+    targetRevision: 13.7.2
     path: prometheus-grafana
     chart: kube-prometheus-stack
   destination:
