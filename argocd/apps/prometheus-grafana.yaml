@@ -9,6 +9,7 @@ spec:
     repoURL: https://github.com/brainupgrade-in/gitops-k8s-apps.git 
     targetRevision: HEAD
     path: prometheus-grafana
+    chart: kube-prometheus-chart
     helm:
       valueFiles:
         - values.yaml
