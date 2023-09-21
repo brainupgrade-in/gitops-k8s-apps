@@ -6,7 +6,7 @@ bases:
 resources:
 - resources/namespace.yaml
 - apps/argocd.yaml 
-- apps/prometheus-grafana.yaml
+# - apps/prometheus-grafana.yaml
 - apps/hello-e2e.yaml
 - apps/hello-uat.yaml
 - apps/hello-prod.yaml
