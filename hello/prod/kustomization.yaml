@@ -7,6 +7,6 @@ patchesStrategicMerge:
 
 images:
 - name: brainupgrade/hello
-  newTag: e75812d580367d297c0a31bbc41fad8e28d44c4a
+  newTag: 86da9800355f2668a55d50366fa9725d0998af76
 resources:
 - ../base
