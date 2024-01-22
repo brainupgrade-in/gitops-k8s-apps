@@ -6,9 +6,7 @@ patchesStrategicMerge:
 - ./deployment-patch.yaml
 
 images:
-- name: brainupgrade/petclinic
-  newTag: bd643862aacbf9fc0defc6ef7ec7ed04cb90c1a3
 - name: brainupgrade/spring-petclinic
-  newTag: a0d1de83494008c4b08b1b279d958a66cfea7272
+  newTag: 73dd4f4b1a7de760ec951e86bf6898438b61009a
 resources:
 - ../base
